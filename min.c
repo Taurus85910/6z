@@ -2,9 +2,9 @@
 int min(int arr[], int arr_size)
 {
     int current_min_element = 100000;
+    int i;
 
-
-    for (int i = 0; i < arr_size; i++)
+    for (i = 0; i < arr_size; i++)
     {
 
         if (current_min_element > arr[i])
@@ -12,3 +12,4 @@ int min(int arr[], int arr_size)
             current_min_element = arr[i];
         }
     }
+}

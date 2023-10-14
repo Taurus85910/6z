@@ -1,7 +1,7 @@
-all: main.o max.o min.o diff.o sum.o
+all: menu.menu max.o min.o diff.o sum.o
 	gcc main.o max.o min.o diff.o sum.o
-main.o: main.c max.h min.h diff.h sum.h
-	gcc -c main.c
+menu.o: menu.c max.h min.h diff.h sum.h
+	gcc -c menu.c
 max.o: max.c max.h
 	gcc -c max.c
 min.o: min.c min.h

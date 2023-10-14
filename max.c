@@ -2,9 +2,10 @@
 int max(int arr[], int arr_size)
 {
     int current_max_element = 0;
+    int i;
 
 
-    for (int i = 0; i < arr_size; i++)
+    for (i = 0; i < arr_size; i++)
     {
 
         if (current_max_element < arr[i])

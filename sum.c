@@ -5,8 +5,9 @@ int sum(int arr[], int arr_size)
     int sum_elem = 0;
     int min_elem_number = 0;
     int min_elem = min(arr, arr_size);
+    int i;
 
-    for (int i = 0; i < arr_size; i++)
+    for (i = 0; i < arr_size; i++)
     {
         if (min_elem == arr[i])
         {
@@ -19,7 +20,7 @@ int sum(int arr[], int arr_size)
 
 
 
-    for (int i = 0; i < min_elem_number; i++)
+    for (i = 0; i < min_elem_number; i++)
     {
         sum_elem += arr[i];
 

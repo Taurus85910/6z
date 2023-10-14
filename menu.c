@@ -18,18 +18,18 @@ int main()
 
     input_data(array, &array_size, &operation_number);
     print_result(array, array_size, operation_number);
-
+    return 0;
 }
 
 
 
 void input_data(int* arr, int* arr_size, int* operation_number)
 {
-    scanf_s("%d", operation_number);
+    scanf("%d", operation_number);
 
     while (getchar() != '\n')
     {
-        scanf_s("%d", &arr[(*arr_size)++]);
+        scanf("%d", &arr[(*arr_size)++]);
     }
 }
 
@@ -40,16 +40,16 @@ void print_result(int* arr, int arr_size, int operation_number)
 {
     switch (operation_number)
     {
-    case 0: printf("%d", max(arr, arr_size));
+    case 0: printf("%d\n", max(arr, arr_size));
         break;
-    case 1: printf("%d", min(arr, arr_size));
+    case 1: printf("%d\n", min(arr, arr_size));
         break;
-    case 2: printf("%d", diff(arr, arr_size));
+    case 2: printf("%d\n", diff(arr, arr_size));
         break;
-    case 3: printf("%d", sum(arr, arr_size));
+    case 3: printf("%d\n", sum(arr, arr_size));
         break;
     default:printf("Данные некорректны");
 
     }
-    return 0;
+  
 }

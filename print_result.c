@@ -17,7 +17,7 @@ void print_result(int* arr, int arr_size, int operation_number)
         break;
     case 3: printf("%d\n", sum(arr, arr_size));
         break;
-    default:printf("%s\n","Данные некорректны");
+    default:printf("%s\n","Р”Р°РЅРЅС‹Рµ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹");
 
     }
 

@@ -12,4 +12,5 @@ int min(int arr[], int arr_size)
             current_min_element = arr[i];
         }
     }
+    return current_min_element;
 }

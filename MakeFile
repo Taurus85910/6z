@@ -1,8 +1,13 @@
-all: main.o get_name.o print_str.o
-	gcc main.o print_str.o get_name.o
-main.o: main.c get_name.h print_str.h
+all: main.o max.o min.o diff.o sum.o
+	gcc main.o max.o min.o diff.o sum.o
+main.o: main.c max.h min.h diff.h sum.h
 	gcc -c main.c
-print_str.o: print_str. print_str.h
-	gcc -c print_str.c
-get_name.o: get_name.c get_name.h
-	gcc -c get_name.c
+max.o: max.c max.h
+	gcc -c max.c
+min.o: min.c min.h
+	gcc -c min.c
+diff.o: diff.c diff.h max.h min.h
+	gcc -c diff.c
+sum.o: sum.c sum.h
+	gcc -c sum.c
+	

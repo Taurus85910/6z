@@ -1,5 +1,5 @@
 all: menu.o max.o min.o diff.o sum.o input_data.o print_result.o
-	gcc menu.o max.o min.o diff.o sum.o input_data.o print_result.o
+	gcc menu.o max.o min.o diff.o sum.o input_data.o print_result.o -o menu
 menu.o: menu.c input_data.h print_result.h
 	gcc -c menu.c
 max.o: max.c max.h
